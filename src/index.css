@@ -1,0 +1,10 @@
+.cell {
+  padding: 0.4rem 0.6rem;
+  text-align: center;
+  color: #f1e7d2;          /* light text, readable on all four colours */
+}
+
+.cell--exact   { background: #3f6b38; }  /* muted green  */
+.cell--partial { background: #8c7424; }  /* muted yellow */
+.cell--none    { background: #6a2420; }  /* muted red    */
+.cell--unknown { background: #3d3a37; }  /* grey         */

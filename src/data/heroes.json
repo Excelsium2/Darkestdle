@@ -1,0 +1,434 @@
+[
+  {
+    "id": "abomination",
+    "name": "Abomination",
+    "source": "base-game",
+    "religious": false,
+    "stats": {
+      "hp": 26,
+      "dodge": 7.5,
+      "speed": 7,
+      "crit": 2,
+      "damage": {
+        "min": 6,
+        "max": 11
+      }
+    },
+    "resistances": {
+      "stun": 40,
+      "blight": 60,
+      "bleed": 30,
+      "disease": 20,
+      "debuff": 20,
+      "trap": 10
+    }
+  },
+  {
+    "id": "antiquarian",
+    "name": "Antiquarian",
+    "source": "base-game",
+    "religious": false,
+    "stats": {
+      "hp": 17,
+      "dodge": 10,
+      "speed": 5,
+      "crit": 1,
+      "damage": {
+        "min": 3,
+        "max": 5
+      }
+    },
+    "resistances": {
+      "stun": 20,
+      "blight": 20,
+      "bleed": 20,
+      "disease": 20,
+      "debuff": 20,
+      "trap": 10
+    }
+  },
+  {
+    "id": "arbalest",
+    "name": "Arbalest",
+    "source": "base-game",
+    "religious": false,
+    "stats": {
+      "hp": 27,
+      "dodge": 0,
+      "speed": 3,
+      "crit": 6,
+      "damage": {
+        "min": 4,
+        "max": 8
+      }
+    },
+    "resistances": {
+      "stun": 40,
+      "blight": 30,
+      "bleed": 30,
+      "disease": 30,
+      "debuff": 30,
+      "trap": 10
+    }
+  },
+  {
+    "id": "bounty-hunter",
+    "name": "Bounty Hunter",
+    "source": "base-game",
+    "religious": false,
+    "stats": {
+      "hp": 25,
+      "dodge": 5,
+      "speed": 5,
+      "crit": 4,
+      "damage": {
+        "min": 5,
+        "max": 10
+      }
+    },
+    "resistances": {
+      "stun": 40,
+      "blight": 30,
+      "bleed": 30,
+      "disease": 20,
+      "debuff": 30,
+      "trap": 40
+    }
+  },
+  {
+    "id": "crusader",
+    "name": "Crusader",
+    "source": "base-game",
+    "religious": true,
+    "stats": {
+      "hp": 33,
+      "dodge": 5,
+      "speed": 1,
+      "crit": 3,
+      "damage": {
+        "min": 6,
+        "max": 12
+      }
+    },
+    "resistances": {
+      "stun": 40,
+      "blight": 30,
+      "bleed": 30,
+      "disease": 30,
+      "debuff": 30,
+      "trap": 10
+    }
+  },
+  {
+    "id": "flagellant",
+    "name": "Flagellant",
+    "source": "crimson-court",
+    "religious": true,
+    "stats": {
+      "hp": 22,
+      "dodge": 0,
+      "speed": 6,
+      "crit": 2,
+      "damage": {
+        "min": 3,
+        "max": 6
+      }
+    },
+    "resistances": {
+      "stun": 50,
+      "blight": 30,
+      "bleed": 65,
+      "disease": 40,
+      "debuff": 30,
+      "trap": 0
+    }
+  },
+  {
+    "id": "grave-robber",
+    "name": "Grave Robber",
+    "source": "base-game",
+    "religious": false,
+    "stats": {
+      "hp": 20,
+      "dodge": 10,
+      "speed": 8,
+      "crit": 6,
+      "damage": {
+        "min": 4,
+        "max": 8
+      }
+    },
+    "resistances": {
+      "stun": 20,
+      "blight": 50,
+      "bleed": 30,
+      "disease": 30,
+      "debuff": 30,
+      "trap": 50
+    }
+  },
+  {
+    "id": "hellion",
+    "name": "Hellion",
+    "source": "base-game",
+    "religious": false,
+    "stats": {
+      "hp": 26,
+      "dodge": 10,
+      "speed": 4,
+      "crit": 5,
+      "damage": {
+        "min": 6,
+        "max": 12
+      }
+    },
+    "resistances": {
+      "stun": 40,
+      "blight": 40,
+      "bleed": 40,
+      "disease": 30,
+      "debuff": 30,
+      "trap": 20
+    }
+  },
+  {
+    "id": "highwayman",
+    "name": "Highwayman",
+    "source": "base-game",
+    "religious": false,
+    "stats": {
+      "hp": 23,
+      "dodge": 10,
+      "speed": 5,
+      "crit": 5,
+      "damage": {
+        "min": 5,
+        "max": 10
+      }
+    },
+    "resistances": {
+      "stun": 30,
+      "blight": 30,
+      "bleed": 30,
+      "disease": 30,
+      "debuff": 30,
+      "trap": 40
+    }
+  },
+  {
+    "id": "houndmaster",
+    "name": "Houndmaster",
+    "source": "base-game",
+    "religious": false,
+    "stats": {
+      "hp": 21,
+      "dodge": 10,
+      "speed": 5,
+      "crit": 4,
+      "damage": {
+        "min": 4,
+        "max": 7
+      }
+    },
+    "resistances": {
+      "stun": 40,
+      "blight": 40,
+      "bleed": 40,
+      "disease": 30,
+      "debuff": 30,
+      "trap": 40
+    }
+  },
+  {
+    "id": "jester",
+    "name": "Jester",
+    "source": "base-game",
+    "religious": false,
+    "stats": {
+      "hp": 19,
+      "dodge": 15,
+      "speed": 7,
+      "crit": 4,
+      "damage": {
+        "min": 4,
+        "max": 7
+      }
+    },
+    "resistances": {
+      "stun": 20,
+      "blight": 40,
+      "bleed": 30,
+      "disease": 20,
+      "debuff": 40,
+      "trap": 30
+    }
+  },
+  {
+    "id": "leper",
+    "name": "Leper",
+    "source": "base-game",
+    "religious": true,
+    "stats": {
+      "hp": 35,
+      "dodge": 0,
+      "speed": 2,
+      "crit": 1,
+      "damage": {
+        "min": 8,
+        "max": 16
+      }
+    },
+    "resistances": {
+      "stun": 60,
+      "blight": 40,
+      "bleed": 10,
+      "disease": 20,
+      "debuff": 40,
+      "trap": 10
+    }
+  },
+  {
+    "id": "man-at-arms",
+    "name": "Man-at-Arms",
+    "source": "base-game",
+    "religious": false,
+    "stats": {
+      "hp": 31,
+      "dodge": 5,
+      "speed": 3,
+      "crit": 2,
+      "damage": {
+        "min": 5,
+        "max": 9
+      }
+    },
+    "resistances": {
+      "stun": 40,
+      "blight": 30,
+      "bleed": 40,
+      "disease": 30,
+      "debuff": 30,
+      "trap": 10
+    }
+  },
+  {
+    "id": "musketeer",
+    "name": "Musketeer",
+    "source": "musketeer",
+    "religious": false,
+    "stats": {
+      "hp": 27,
+      "dodge": 0,
+      "speed": 3,
+      "crit": 6,
+      "damage": {
+        "min": 4,
+        "max": 8
+      }
+    },
+    "resistances": {
+      "stun": 40,
+      "blight": 30,
+      "bleed": 30,
+      "disease": 30,
+      "debuff": 30,
+      "trap": 10
+    }
+  },
+  {
+    "id": "occultist",
+    "name": "Occultist",
+    "source": "base-game",
+    "religious": false,
+    "stats": {
+      "hp": 19,
+      "dodge": 10,
+      "speed": 6,
+      "crit": 6,
+      "damage": {
+        "min": 4,
+        "max": 7
+      }
+    },
+    "resistances": {
+      "stun": 20,
+      "blight": 30,
+      "bleed": 40,
+      "disease": 40,
+      "debuff": 60,
+      "trap": 10
+    }
+  },
+  {
+    "id": "plague-doctor",
+    "name": "Plague Doctor",
+    "source": "base-game",
+    "religious": false,
+    "stats": {
+      "hp": 22,
+      "dodge": 0,
+      "speed": 7,
+      "crit": 2,
+      "damage": {
+        "min": 4,
+        "max": 7
+      }
+    },
+    "resistances": {
+      "stun": 20,
+      "blight": 60,
+      "bleed": 20,
+      "disease": 50,
+      "debuff": 50,
+      "trap": 20
+    }
+  },
+  {
+    "id": "shieldbreaker",
+    "name": "Shieldbreaker",
+    "source": "shieldbreaker",
+    "religious": false,
+    "stats": {
+      "hp": 20,
+      "dodge": 8,
+      "speed": 5,
+      "crit": 6,
+      "damage": {
+        "min": 5,
+        "max": 10
+      }
+    },
+    "resistances": {
+      "stun": 50,
+      "blight": 20,
+      "bleed": 30,
+      "disease": 30,
+      "debuff": 30,
+      "trap": 20
+    }
+  },
+  {
+    "id": "vestal",
+    "name": "Vestal",
+    "source": "base-game",
+    "religious": true,
+    "stats": {
+      "hp": 24,
+      "dodge": 0,
+      "speed": 4,
+      "crit": 1,
+      "damage": {
+        "min": 4,
+        "max": 8
+      }
+    },
+    "resistances": {
+      "stun": 30,
+      "blight": 30,
+      "bleed": 40,
+      "disease": 30,
+      "debuff": 30,
+      "trap": 10
+    }
+  }
+]
