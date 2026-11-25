@@ -14,7 +14,6 @@ const GamePage = () => {
 
   const answer = mode.candidates[0]   // fixed for now; daily pick comes later
 
-  // derived values, recalculated every render
   const rows = guesses.map((g) => compareRow(g, answer, mode.columns))
   const hasWon = guesses.some((g) => g.id === answer.id)
   const remaining = mode.candidates.filter((c) => !guesses.some((g) => g.id === c.id))
@@ -51,7 +50,11 @@ const GamePage = () => {
               <td>{guesses[i].name}</td>
               {cells.map((cell) => (
                 <td key={cell.key} className={`cell cell--${cell.status}`}>
-                  {String(cell.value)}
+                  {Array.isArray(cell.text)
+                    ? <div className="chips">{  cell.text.map((e, i)=> <span key={e}  className={`chip chip--${cell.matches[i]}`}>{e}</span>)}</div>
+                    : cell.text}
+
+                  
                   {cell.direction === 'higher' && ' ▲'}
                   {cell.direction === 'lower' && ' ▼'}
                 </td>

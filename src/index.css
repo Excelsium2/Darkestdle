@@ -1,10 +1,22 @@
 .cell {
   padding: 0.4rem 0.6rem;
   text-align: center;
-  color: #f1e7d2;          /* light text, readable on all four colours */
+  color: #f1e7d2;     
 }
 
-.cell--exact   { background: #3f6b38; }  /* muted green  */
-.cell--partial { background: #8c7424; }  /* muted yellow */
-.cell--none    { background: #6a2420; }  /* muted red    */
-.cell--unknown { background: #3d3a37; }  /* grey         */
+.cell--exact   { background: #3f6b38; } 
+.cell--partial { background: #8c7424; }  
+.cell--none    { background: #6a2420; } 
+.cell--unknown { background: #3d3a37; }  
+
+
+.chips { display: flex; flex-direction: column; gap: 4px; gap: 4px; }
+.chip {
+  padding: 2px 8px;
+  border: 2px solid;
+  background: #242625;
+  border-color: #f2d679
+}
+
+.chip--exact { color: #1cd60f; }
+.chip--none  { color: #d60000; }

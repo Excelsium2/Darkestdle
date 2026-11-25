@@ -8,12 +8,13 @@ export const compareNumber = (guess, answer) => {
 
 export const compareSets = (guess, answer) => {
     if (guess == null || answer == null) return {status: STATUS.UNKNOWN}
+    const matches = guess.map(item=>answer.includes(item) ? STATUS.EXACT : STATUS.NONE)
     if (guess.length === answer.length && answer.every(item => guess.includes(item))) 
-        return {status: STATUS.EXACT}
+        return {status: STATUS.EXACT, matches}
     const sameTraits = guess.filter(item => answer.includes(item))
     if (sameTraits.length === 0) 
-        return {status: STATUS.NONE}
-    return {status: STATUS.PARTIAL}
+        return {status: STATUS.NONE, matches}
+    return {status: STATUS.PARTIAL, matches}
 }
 
 export const compareEqual = (guess, answer) => {
@@ -39,6 +40,6 @@ export const compareRow = (guess, answer, columns) => {
     return columns.map((column) => {
         const g = column.get(guess)
         const a = column.get(answer)
-        return { key: column.key, value: g, ...column.compare(g, a) }
+        return { key: column.key, value: g, text: column.format ? column.format(g): g,  ...column.compare(g, a) }
     })
 }

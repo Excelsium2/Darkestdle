@@ -3,7 +3,11 @@
     "id": "abomination",
     "name": "Abomination",
     "source": "base-game",
+    "gender": "male",
     "religious": false,
+    "ranks": [2],
+    "teamEffects": ["heal", "stress-heal", "move", "stress"],
+    "enemyEffects": ["stun", "blight", "move"],
     "stats": {
       "hp": 26,
       "dodge": 7.5,
@@ -27,7 +31,11 @@
     "id": "antiquarian",
     "name": "Antiquarian",
     "source": "base-game",
+    "gender": "female",
     "religious": false,
+    "ranks": [3, 4],
+    "teamEffects": ["guard", "move", "mark"],
+    "enemyEffects": ["blight"],
     "stats": {
       "hp": 17,
       "dodge": 10,
@@ -49,9 +57,14 @@
   },
   {
     "id": "arbalest",
-    "name": "Arbalest",
+    "name": "Arbalest / Musketeer",
+    "aliases": ["Arbalest", "Musketeer"],
     "source": "base-game",
+    "gender": "female",
     "religious": false,
+    "ranks": [3, 4],
+    "teamEffects": ["heal", "stress-heal"],
+    "enemyEffects": ["mark", "move"],
     "stats": {
       "hp": 27,
       "dodge": 0,
@@ -75,7 +88,11 @@
     "id": "bounty-hunter",
     "name": "Bounty Hunter",
     "source": "base-game",
+    "gender": "male",
     "religious": false,
+    "ranks": [2],
+    "teamEffects": [],
+    "enemyEffects": ["stun", "bleed", "mark", "move"],
     "stats": {
       "hp": 25,
       "dodge": 5,
@@ -99,7 +116,11 @@
     "id": "crusader",
     "name": "Crusader",
     "source": "base-game",
+    "gender": "male",
     "religious": true,
+    "ranks": [1, 2],
+    "teamEffects": ["heal", "stress-heal", "move", "mark"],
+    "enemyEffects": ["stun"],
     "stats": {
       "hp": 33,
       "dodge": 5,
@@ -120,10 +141,42 @@
     }
   },
   {
+    "id": "duelist",
+    "name": "Duelist",
+    "source": "fires-edge",
+    "gender": "female",
+    "religious": false,
+    "ranks": [3],
+    "teamEffects": ["riposte", "move", "mark"],
+    "enemyEffects": ["stun", "move"],
+    "stats": {
+      "hp": 21,
+      "dodge": 5,
+      "speed": 6,
+      "crit": 5,
+      "damage": {
+        "min": 5,
+        "max": 7
+      }
+    },
+    "resistances": {
+      "stun": 30,
+      "blight": 30,
+      "bleed": 30,
+      "disease": 30,
+      "debuff": 40,
+      "trap": 10
+    }
+  },
+  {
     "id": "flagellant",
     "name": "Flagellant",
     "source": "crimson-court",
+    "gender": "male",
     "religious": true,
+    "ranks": [1, 2],
+    "teamEffects": ["heal", "stress-heal", "stress", "mark", "debuff", "bleed"],
+    "enemyEffects": ["bleed"],
     "stats": {
       "hp": 22,
       "dodge": 0,
@@ -147,7 +200,11 @@
     "id": "grave-robber",
     "name": "Grave Robber",
     "source": "base-game",
+    "gender": "female",
     "religious": false,
+    "ranks": [2, 3],
+    "teamEffects": ["stealth", "move"],
+    "enemyEffects": ["blight"],
     "stats": {
       "hp": 20,
       "dodge": 10,
@@ -171,7 +228,11 @@
     "id": "hellion",
     "name": "Hellion",
     "source": "base-game",
+    "gender": "female",
     "religious": false,
+    "ranks": [1],
+    "teamEffects": ["heal", "move", "debuff"],
+    "enemyEffects": ["stun", "bleed"],
     "stats": {
       "hp": 26,
       "dodge": 10,
@@ -195,7 +256,11 @@
     "id": "highwayman",
     "name": "Highwayman",
     "source": "base-game",
+    "gender": "male",
     "religious": false,
+    "ranks": [2, 3],
+    "teamEffects": ["riposte", "move"],
+    "enemyEffects": ["bleed", "move"],
     "stats": {
       "hp": 23,
       "dodge": 10,
@@ -219,7 +284,11 @@
     "id": "houndmaster",
     "name": "Houndmaster",
     "source": "base-game",
+    "gender": "male",
     "religious": false,
+    "ranks": [2, 3, 4],
+    "teamEffects": ["heal", "stress-heal", "guard"],
+    "enemyEffects": ["stun", "bleed", "mark"],
     "stats": {
       "hp": 21,
       "dodge": 10,
@@ -243,7 +312,11 @@
     "id": "jester",
     "name": "Jester",
     "source": "base-game",
+    "gender": "male",
     "religious": false,
+    "ranks": [3],
+    "teamEffects": ["stress-heal", "move", "mark", "debuff"],
+    "enemyEffects": ["bleed"],
     "stats": {
       "hp": 19,
       "dodge": 15,
@@ -267,7 +340,11 @@
     "id": "leper",
     "name": "Leper",
     "source": "base-game",
+    "gender": "male",
     "religious": true,
+    "ranks": [1],
+    "teamEffects": ["heal", "stress-heal", "mark", "debuff"],
+    "enemyEffects": ["mark", "move"],
     "stats": {
       "hp": 35,
       "dodge": 0,
@@ -291,7 +368,11 @@
     "id": "man-at-arms",
     "name": "Man-at-Arms",
     "source": "base-game",
+    "gender": "male",
     "religious": false,
+    "ranks": [1, 2],
+    "teamEffects": ["guard", "riposte", "move", "mark"],
+    "enemyEffects": ["stun", "move"],
     "stats": {
       "hp": 31,
       "dodge": 5,
@@ -312,34 +393,14 @@
     }
   },
   {
-    "id": "musketeer",
-    "name": "Musketeer",
-    "source": "musketeer",
-    "religious": false,
-    "stats": {
-      "hp": 27,
-      "dodge": 0,
-      "speed": 3,
-      "crit": 6,
-      "damage": {
-        "min": 4,
-        "max": 8
-      }
-    },
-    "resistances": {
-      "stun": 40,
-      "blight": 30,
-      "bleed": 30,
-      "disease": 30,
-      "debuff": 30,
-      "trap": 10
-    }
-  },
-  {
     "id": "occultist",
     "name": "Occultist",
     "source": "base-game",
+    "gender": "male",
     "religious": false,
+    "ranks": [2, 3],
+    "teamEffects": ["heal", "bleed"],
+    "enemyEffects": ["stun", "mark", "move"],
     "stats": {
       "hp": 19,
       "dodge": 10,
@@ -363,7 +424,11 @@
     "id": "plague-doctor",
     "name": "Plague Doctor",
     "source": "base-game",
+    "gender": "female",
     "religious": false,
+    "ranks": [3],
+    "teamEffects": ["heal"],
+    "enemyEffects": ["stun", "bleed", "blight", "move"],
     "stats": {
       "hp": 22,
       "dodge": 0,
@@ -384,10 +449,42 @@
     }
   },
   {
+    "id": "runaway",
+    "name": "Runaway",
+    "source": "fires-edge",
+    "gender": "female",
+    "religious": false,
+    "ranks": [2, 3, 4],
+    "teamEffects": ["heal", "stealth", "move"],
+    "enemyEffects": ["burn", "move"],
+    "stats": {
+      "hp": 22,
+      "dodge": 5,
+      "speed": 5,
+      "crit": 4,
+      "damage": {
+        "min": 4,
+        "max": 7
+      }
+    },
+    "resistances": {
+      "stun": 20,
+      "blight": 40,
+      "bleed": 40,
+      "disease": 30,
+      "debuff": 20,
+      "trap": 30
+    }
+  },
+  {
     "id": "shieldbreaker",
     "name": "Shieldbreaker",
     "source": "shieldbreaker",
+    "gender": "female",
     "religious": false,
+    "ranks": [1],
+    "teamEffects": ["move"],
+    "enemyEffects": ["blight", "move"],
     "stats": {
       "hp": 20,
       "dodge": 8,
@@ -411,7 +508,11 @@
     "id": "vestal",
     "name": "Vestal",
     "source": "base-game",
+    "gender": "female",
     "religious": true,
+    "ranks": [2, 3],
+    "teamEffects": ["heal"],
+    "enemyEffects": ["stun"],
     "stats": {
       "hp": 24,
       "dodge": 0,
