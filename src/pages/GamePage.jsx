@@ -13,7 +13,7 @@ const GamePage = () => {
 
 
   const [guesses, setGuesses] = useState([])
-  const [rules, openRules] = useState(false)
+  const [showRules, setShowRules] = useState(false)
 
 
   if (!mode) return <p>Unknown trial.</p>
@@ -44,13 +44,13 @@ const GamePage = () => {
   return (
     <main className="game-page">
       <button onClick={() => navigate('/modes')}>← Trials</button>
-      <button onClick={() => openRules(true)}>Rules</button>
+      <button onClick={() => setShowRules(true)}>Rules</button>
       <h1>{mode.title}</h1>
       <p>{mode.subtitle}</p>
 
-      {rules &&
-        <div className="overlay">
-          <div className="modal">
+      {showRules &&
+        <div className="overlay" onClick={() => setShowRules(false)}>
+          <div className="modal" onClick={(e) => e.stopPropagation()}>
             <h2>How to play</h2>
             <ul>
               <li>Green: exact match. Amber: shares at least one value. Red: no match.</li>
@@ -60,7 +60,7 @@ const GamePage = () => {
               <li>The Arbalest and Musketeer are identical, so either name counts.</li>
             </ul>
 
-            <button onClick={() => openRules(false)}>Close</button>
+            <button onClick={() => setShowRules(false)}>Close</button>
           </div>
         </div>
       }

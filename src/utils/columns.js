@@ -21,5 +21,5 @@ export const HERO_COLUMNS = [
   // Stats
   { key: 'hp',        label: 'HP',            group: 'Stats',    get: (h) => h.stats.hp,         compare: compareNumber },
   { key: 'speed',     label: 'Speed',         group: 'Stats',    get: (h) => h.stats.speed,      compare: compareNumber },
-  { key: 'damage',    label: 'Damage',        group: 'Stats',    get: (h) => h.stats.damage.max, compare: compareNumber},
+  { key: 'damage',    label: 'Max DMG',        group: 'Stats',    get: (h) => h.stats.damage.max, compare: compareNumber},
 ]
